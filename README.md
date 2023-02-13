@@ -57,13 +57,19 @@ An example of the utterances and inferences is shown below:
 
 Note that the utterance texts are replaced by their Twitter IDs.
 
-## References
+## Reference
 
-```bib
-@InProceedings{ide_nlp2023_dialogue,
+```bibtex
+@InProceedings{ide_nlp2023_dcsg,
     author =    "井手竜也 and 榮田亮真 and 河原大輔 and 山崎天 and 李聖哲 and 新里顕大 and 佐藤敏紀",
     title =     "対話に基づく常識知識グラフの構築と対話応答生成に対する適用",
     booktitle = "言語処理学会第29回年次大会",
     year =      "2023",
+    url =       "https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/H1-4.pdf"
+    note=       "in Japanese"
 }
 ```
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
