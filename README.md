@@ -1,25 +1,25 @@
 # Dialogue Commonsense Graph in Japanese
 
-We propose a commonsense knowledge graph (CSKG) grounded on dialogues.
+We proposed a commonsense knowledge graph (CSKG) grounded on dialogues.
 This repository contains the graph built in Japanese.
 
 ## Data Format
 
-We define the eight relations based on categories, time series and target persons:
+We defined the eight relations based on categories, time series, and target persons, referring to [CICERO](https://github.com/declare-lab/CICERO).
 
-| Relation | Category | Time | Person |
-|:-|:-|:-|:-|
-| Cause | Event | Before | Speaker |
-| Prerequisite | Event | Before | Listener |
-| Subsequent event | Event | After | Speaker |
-| Effect | Event | After | Listener |
-| Motivation | Mental state | Before | Speaker |
-| Guess | Mental state | Before | Listener |
-| Reflection | Mental state | After | Speaker |
-| Reaction | Mental state | After | Listener |
+| Relation         | Category     | Time   | Person   |
+| :--------------- | :----------- | :----- | :------- |
+| Cause            | Event        | Before | Speaker  |
+| Prerequisite     | Event        | Before | Listener |
+| Subsequent event | Event        | After  | Speaker  |
+| Effect           | Event        | After  | Listener |
+| Motivation       | Mental state | Before | Speaker  |
+| Guess            | Mental state | Before | Listener |
+| Reflection       | Mental state | After  | Speaker  |
+| Reaction         | Mental state | After  | Listener |
 
-Each utterance is annotated with inferences of the eight relations.
-An example of the utterances and inferences is shown below:
+Each utterance is annotated with inferences of the eight relations, and each dialogue is stored as a list of the utterances.
+An example of the annotated utterances is shown below:
 
 ```json
 {
@@ -56,6 +56,20 @@ An example of the utterances and inferences is shown below:
 ```
 
 Note that the utterance texts are replaced by their Twitter IDs.
+
+We annotated 352 dialogues, corresponding to 2,121 utterances, with the inferences.
+The statistics of the graph is shown below:
+
+| Relation         | # triples | Avg # infs / utt |
+| :--------------- | --: | -: |
+| Cause            | 3,060 | 1.44 |
+| Prerequisite     | 2,728 | 1.29 |
+| Subsequent event | 3,001 | 1.41 |
+| Effect           | 3,276 | 1.54 |
+| Motivation       | 3,567 | 1.68 |
+| Guess            | 1,679 | 0.79 |
+| Reflection       | 1,591 | 0.75 |
+| Reaction         | 3,564 | 1.68 |
 
 ## Reference
 
